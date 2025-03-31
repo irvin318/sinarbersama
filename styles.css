@@ -111,7 +111,7 @@ p {
     margin-top: 10px;
 }
 
-button {
+.button {
     background-color: #F59E0B;
     color: white;
     border: none;
@@ -121,7 +121,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: #FBBF24;
 }
 
