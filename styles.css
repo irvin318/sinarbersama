@@ -22,39 +22,41 @@ footer {
 }
 
 
-/* Navigation Bar */
+/* Navigation Styling */
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Adjust the background color as needed */
+    padding: 10px 20px;
+}
+
+nav .logo {
+    height: 50px; 
+    margin-right: 20px;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #fff; /* Adjust the text color as needed */
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 8px 12px;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    background-color: #555; /* Adjust the hover background color as needed */
+    border-radius: 4px;
 }
 
 
@@ -125,58 +127,3 @@ p {
     background-color: #FBBF24;
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-    text-align: center;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.contact-form .btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form .btn:hover {
-    background-color: #555;
-}
