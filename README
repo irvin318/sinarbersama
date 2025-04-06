@@ -1,0 +1,65 @@
+To configure your Shinjiru-hosted domain to work with your GitHub Pages site, follow these steps:
+
+Access Shinjiru's DNS Management Interface:
+
+Log in to your Shinjiru Client Area.​
+247livesupport.biz
++1
+247livesupport.biz
++1
+
+Navigate to the 'Domains' section and select the domain you wish to configure.​
+
+Click on 'Manage DNS' to access the DNS settings for your domain.​
+247livesupport.biz
+
+Configure DNS Records:
+
+Depending on whether you're setting up an apex domain (e.g., yourdomain.com) or a subdomain (e.g., www.yourdomain.com), you'll need to adjust your DNS records accordingly:
+
+For Apex Domains:
+
+Create or update the following A records to point to GitHub Pages' IP addresses:
+
+185.199.108.153
+
+185.199.109.153
+
+185.199.110.153
+
+185.199.111.153
+
+Ensure that any existing A records for your apex domain are removed or updated to prevent conflicts.
+
+For Subdomains:
+
+Create a CNAME record for your subdomain pointing to your GitHub Pages URL. For example, to set up www.yourdomain.com, create a CNAME record with:
+
+Name: www
+
+Value: yourusername.github.io
+
+This directs traffic from www.yourdomain.com to your GitHub Pages site.
+
+Configure Your GitHub Repository:
+
+In your repository on GitHub, navigate to 'Settings'.​
+
+Under the 'Pages' section, enter your custom domain (e.g., www.yourdomain.com) in the 'Custom domain' field and save the changes.​
+Medium
+
+This action creates a CNAME file in your repository, linking your custom domain to your GitHub Pages site.​
+GitHub Docs
++4
+Medium
++4
+DEV Community
++4
+
+Verify and Test:
+
+DNS changes can take up to 48 hours to propagate. After this period, visit your custom domain in a web browser to ensure it's correctly directing to your GitHub Pages site.​
+
+For HTTPS support, GitHub Pages automatically provides SSL certificates. After your custom domain is configured, GitHub will attempt to issue a certificate. This process may take some time.​
+
+By following these steps, your Shinjiru-hosted domain will be successfully linked to your GitHub Pages site.​

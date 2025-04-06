@@ -6,13 +6,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #2C3E50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
 footer {
     background-color: #333;
     color: white;
@@ -59,8 +52,37 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
+/* Front Header Styling */
+.front {
+    height: 80vh;
+    background: url('images/container.png') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
 
+.front-content {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+}
+
+.front-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.front-content p {
+    font-size: 1.2rem;
+}
+
+/* Section Styling */
 section {
+    position: relative;
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 1200px;
@@ -70,7 +92,7 @@ section {
 }
 
 h1, h2, h3 {
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -79,6 +101,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Cards Styling */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -117,8 +140,9 @@ p {
     background-color: #F59E0B;
     color: white;
     border: none;
+    text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
 }
