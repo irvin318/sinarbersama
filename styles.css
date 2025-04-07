@@ -1,6 +1,6 @@
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #ECF0F1;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background-color: #1b2936;
     color: #2C3E50;
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
-
 
 /* Navigation Styling */
 nav {
@@ -68,6 +67,7 @@ nav ul li a:hover {
     position: relative;
     z-index: 2;
     max-width: 80%;
+    margin-bottom: 200px;
 }
 
 .front-content h1 {
@@ -80,49 +80,38 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
-/* Section Styling */
-section {
-    position: relative;
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2, h3 {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
 /* Cards Styling */
 .card-container {
+    position: relative;
+    margin-top: -220px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+    
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 300px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
+    margin: 20px;
+    background-color: white;
+    border-radius: 0; 
+    overflow: hidden;
 }
 
 .card img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 200px;
+    display: block;
+    border-radius: 0;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3, .card p {
+    margin: 0 0 10px;
 }
 
 .card-title {
@@ -136,6 +125,12 @@ p {
     margin-top: 10px;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 .button {
     background-color: #F59E0B;
     color: white;
@@ -151,3 +146,12 @@ p {
     background-color: #FBBF24;
 }
 
+.outside{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.contact{
+    color: white;
+}
