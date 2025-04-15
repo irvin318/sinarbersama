@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Sinar Bersama Sdn Bhd</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<script>
+    function toggleNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
 <body>
-    <nav>
-        <a href="index.html" ><img src="images/logoW.svg" a href="index.html" alt="Sinar Bersama Sdn Bhd Logo" class="logo"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="logo-link">
+            <img src="images/logoW.svg" alt="Sinar Bersama Sdn Bhd Logo" class="logo">
+        </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </div>
 
     <section class="contact">
         <h2>Contact Details</h2>
-        <p><strong>Address:</strong> LOT 5, 2ND FLOOR, KOLAM CENTRE, JALAN KOLAM CENTRE, 88300 LORONG HILLTOP, KOTA KINABALU, SABAH.</p>
+        <p><strong>Address:</strong> LOT 5, 2ND FLOOR, KOLAM CENTRE, JALAN KOLAM CENTRE, 88300 LORONG HILLTOP, KOTA
+            KINABALU, SABAH.</p>
         <p><strong>Phone:</strong> 012-5118107</p>
         <p><strong>Email:</strong> contact@sinarbersama.com.my</p>
     </section>
@@ -29,6 +44,7 @@
         <p>Address: LOT 5, 2ND FLOOR, KOLAM CENTRE, JALAN KOLAM CENTRE, 88300 LORONG HILLTOP, KOTA KINABALU, SABAH.</p>
         <p>Tel: 012-5118107</p>
     </footer>
-    
+
 </body>
+
 </html>

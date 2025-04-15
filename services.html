@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - SINAR BERSAMA SDN BHD</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<script>
+    function toggleNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
 <body>
-    <nav>
-        <a href="index.html" ><img src="images/logoW.svg" a href="index.html" alt="Sinar Bersama Sdn Bhd Logo" class="logo"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="logo-link">
+            <img src="images/logoW.svg" alt="Sinar Bersama Sdn Bhd Logo" class="logo">
+        </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </div>
 
     <!-- FRONT SECTION -->
     <header class="front">
@@ -29,22 +43,27 @@
         <div class="card">
             <img src="images/port.png" alt="Logistics Management">
             <div class="card-content">
-                <h3>Logistics Management</h3>
-                <p>We offer efficient and reliable logistics solutions tailored to your needs, ensuring timely and safe delivery of goods across regions.</p>
+                <h3>Consulting Services</h3>
+                <p>Our experienced consultants provide strategic advice to optimize your logistics operations, ensuring
+                    efficiency and cost-effectiveness.</p>
             </div>
         </div>
         <div class="card">
             <img src="images/warehouse.png" alt="Warehousing">
             <div class="card-content">
-                <h3>Warehousing</h3>
-                <p>Our secure and accessible storage facilities are equipped with advanced inventory management systems to safeguard your products.</p>
+                <h3>Customs Brokerage</h3>
+                <p>We handle all aspects of customs clearance, ensuring compliance with regulations and timely delivery
+                    of
+                    your goods.</p>
+
             </div>
         </div>
         <div class="card">
             <img src="images/container logo.png" alt="Distribution">
             <div class="card-content">
-                <h3>Distribution</h3>
-                <p>We provide timely and accurate distribution services, leveraging a robust network to ensure your products reach their destination efficiently.</p>
+                <h3>Technology Solutions</h3>
+                <p>Implementing advanced logistics technology to streamline operations, enhance tracking, and improve
+                    overall service delivery.</p>
             </div>
         </div>
     </div>
@@ -54,6 +73,7 @@
         <p>Address: LOT 5, 2ND FLOOR, KOLAM CENTRE, JALAN KOLAM CENTRE, 88300 LORONG HILLTOP, KOTA KINABALU, SABAH.</p>
         <p>Tel: 012-5118107</p>
     </footer>
-    
+
 </body>
+
 </html>
